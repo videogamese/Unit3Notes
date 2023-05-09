@@ -22,33 +22,8 @@ input[type="text"], textarea, select{
     margin-bottom: 12px;
     color: #374151;
 }
-*{
-    box-sizing: border-box;
-}
-body{
-    background-image: url("https://static.vecteezy.com/system/resources/previews/000/695/413/original/seamless-pattern-of-pizza-isolated-on-black-background-vector.jpg");
-    background-size: 1200px 1200px;
-}
-
-label {
-    display: block;
-    line-height: 1.25rem;
-    font-weight: 500;
-    font-size: 14px;
-    color: rgb(27, 65, 39);
-}
-
-input[type="text"], textarea, select{
-    font-size: .875rem;
-    line-height: 1.25rem;
-    border: 1px solid #d1d5db;
-    border-radius: 6px;
-    padding: 8px 12px;
-    margin-bottom: 12px;
-    color: #374151;
-}
 fieldset{
-    border: 1px solid #1b4127;
+    border: 1px solid #d1d5db;
     border-radius: 6px;
     width: fit-content;
     margin-bottom: 16px;
@@ -58,7 +33,7 @@ fieldset{
 
 fieldset legend{
     font-size: 14px;
-    color: #723300;
+    color: #374151;
 }
 
 input[type="checkbox"]{
@@ -90,25 +65,13 @@ section header{
 
 .content{
     box-shadow: 0 1px 3px 0 rgba(0 0 0  0.1), 0 1px 2px -1px rgba(0 0 0  0.1);
-    background: #ffbf8d;
+    background: white;
     padding: 20px;
     border-radius: 12px;
     width: 500px;
-    border:  5px solid #723300;
 }
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-h1 {
-    text-align: center;
-}
-fieldset {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-textarea {
-    text-align: center
-;
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Avatar Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="content">
+
+        <p>PICK YOUR AVATAR</p>
+        <img src="https://ksr-ugc.imgix.net/assets/027/277/355/e6cd621293ea54a4415f1243d878213c_original.PNG?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1574225922&auto=format&frame=1&q=92&s=3efb08b78794be268922171868587fb9"/>
+
+        <div class="row">
+            <button id="avatar1">Efren</button>
+            <button id="avatar2">Diego</button>
+            <button id="avatar3">Manuel</button>
+        </div>
+
+        <div class="row">
+            <button id="avatar4">Noah</button>
+            <button id="avatar5">Oscar</button>
+            <button id="avatar6">Fernando</button>
+        </div>
+        <button id="clear">CLEAR</button>
+        <br>
+    </div>
+</div>
+<script>
+    const picture = document.querySelector('img');
+    const avatar1 = document.getElementById('avatar1');
+    const avatar2 = document.getElementById('avatar2');
+    const avatar3 = document.getElementById('avatar3');
+    const avatar4 = document.getElementById('avatar4');
+    const avatar5 = document.getElementById('avatar5');
+    const avatar6 = document.getElementById('avatar6');
+    const clear = document.getElementById('clear');
+
+    avatar1.addEventListener('click', function(e){
+        picture.src="meirl.JPG";
+    });
+
+    avatar2.addEventListener('click', function(e){
+        picture.src="funi.PNG";
+    });
+
+    avatar3.addEventListener('click', function(e){
+        picture.src="Myself.png";
+    });
+
+    avatar4.addEventListener('click', function(e){
+        picture.src="Noah.png";
+    });
+
+    avatar5.addEventListener('click', function(e){
+        picture.src="Oscar.png";
+    });
+
+    avatar6.addEventListener('click', function(e){
+        picture.src="MicrosoftTeams-image.png";
+    });
+
+    clear.addEventListener('click', function(e){
+        picture.src="https://ksr-ugc.imgix.net/assets/027/277/355/e6cd621293ea54a4415f1243d878213c_original.PNG?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1574225922&auto=format&frame=1&q=92&s=3efb08b78794be268922171868587fb9";
+    })
+</script>
+
+</body>
+</html>

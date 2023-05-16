@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Grocery List Maker</h1>
+        <div class="row">
+            <div>
+                <label for="item">Item: </label>
+                <input id="item" name="item" type="text">
+            </div>
+        </div>
+        <button id="add">Add Item</button>
+        <div class="text">
+
+        </div>
+    </div>
+</div>
+<script>
+    const content = document.querySelector('.text');
+
+    const Item = document.getElementById('item');
+    const add = document.getElementById('add');
+
+    add.addEventListener('click', function(e){
+        let item = Item.value;
+
+        const additem = document.createElement('li');
+        additem.innerHTML = `${item}`;
+        content.insertAdjacentElement('afterbegin', additem);
+
+        Item.value = "";
+    });
+
+
+</script>
+</body>
+</html>

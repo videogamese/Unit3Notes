@@ -24,7 +24,7 @@
         <button id="submit">Submit</button>
         <div class="row">
             <div class="avatar">
-                <img id="picture" height="80" width="80" alt="your avatar!" src="spamtong.PNG">
+                <img id="picture" height="100" width="100" alt="your avatar!" src="spamtong.PNG">
             </div>
         </div>
         <button id="click">Feed me [kromer]!</button>
@@ -32,12 +32,32 @@
             <fieldset>
                 <legend><h3>Shop!</h3></legend>
                 <div class="row">
-                    <label for="2x">Instead of feeding 1 kromer you feed 1 more at a time than usual (stackable)!!!! (Need 50 kromer)</label>
-                    <button id="2x">Buy!</button>
+                    <label for="1">Instead of feeding 1 kromer you feed 1 more at a time than usual (stackable)!!!! (Need 50 kromer)</label>
+                    <button id="1">Buy!</button>
+                </div>
+                <div class="row">
+                    <label for="5">Instead of feeding 1 kromer you feed 5 more at a time than usual (stackable)!!!! (Need 250 kromer)</label>
+                    <button id="5">Buy!</button>
+                </div>
+                <div class="row">
+                    <label for="10">Instead of feeding 1 kromer you feed 10 more at a time than usual (stackable)!!!! (Need 2000 kromer)</label>
+                    <button id="10">Buy!</button>
+                </div>
+                <div class="row">
+                    <label for="25">Instead of feeding 1 kromer you feed 25 more at a time than usual (stackable)!!!! (Need 10,000 kromer)</label>
+                    <button id="25">Buy!</button>
+                </div>
+                <div class="row">
+                    <label for="50">Instead of feeding 1 kromer you feed 50 more at a time than usual (stackable)!!!! (Need 42,069 kromer)</label>
+                    <button id="50">Buy!</button>
+                </div>
+                <div class="row">
+                    <label for="100">Instead of feeding 1 kromer you feed 100 more at a time than usual (stackable)!!!! (Need 1,000,000,000 kromer)</label>
+                    <button id="100">Buy!</button>
                 </div>
                 <br>
                 <div class="row">
-                    <label for="win">Become a [BIG SHOT]!(You win the game)(10,000 kromer Needed)</label>
+                    <label for="win">Become a [BIG SHOT]!(You win the game)(1,000,000,000,000 kromer Needed)</label>
                     <button id="win">Buy!</button>
                 </div>
             </fieldset>
@@ -98,7 +118,7 @@
         }
     });
 
-    const times2 = document.getElementById('2x');
+    const times2 = document.getElementById('1');
 
     let i = 1;
 
@@ -108,6 +128,34 @@
             click.addEventListener('click', function(e){
                 score += i;
             scorePlace.innerHTML = `<h3 id="score">kromer fed to spamtong: ${score}</h3>`;
+            });
+        }
+    });
+
+    const times5 = document.getElementById('5');
+
+    let q = 5;
+
+    times5.addEventListener('click', function(e){
+        if(score >= 250){
+            score -= 250;
+            click.addEventListener('click', function(e){
+                score += q;
+                scorePlace.innerHTML = `<h3 id="score">kromer fed to spamtong: ${score}</h3>`;
+            });
+        }
+    });
+
+    const times10 = document.getElementById('5');
+
+    let w = 5;
+
+    times10.addEventListener('click', function(e){
+        if(score >= 2000){
+            score -= 2000;
+            click.addEventListener('click', function(e){
+                score += w;
+                scorePlace.innerHTML = `<h3 id="score">kromer fed to spamtong: ${score}</h3>`;
             });
         }
     });

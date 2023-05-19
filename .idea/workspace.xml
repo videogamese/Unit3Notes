@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="158c4503-c99c-4144-8215-46692ba0c69e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/clickerGaem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hue.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spamtong.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clickerGaem.html" beforeDir="false" afterPath="$PROJECT_DIR$/clickerGaem.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clickerGaem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+            <state relative-caret-position="552">
+              <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
             </state>
           </provider>
         </entry>
@@ -170,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,6 +179,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,7 +231,8 @@
       <workItem from="1684253195395" duration="751000" />
       <workItem from="1684253977918" duration="1780000" />
       <workItem from="1684424199376" duration="5116000" />
-      <workItem from="1684429914847" duration="298000" />
+      <workItem from="1684429914847" duration="472000" />
+      <workItem from="1684514187592" duration="1441000" />
     </task>
     <task id="LOCAL-00001" summary="Homework Solver">
       <created>1683566668454</created>
@@ -263,11 +262,18 @@
       <option name="project" value="LOCAL" />
       <updated>1684254313940</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="spamtong clicker nearly done">
+      <created>1684430385017</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684430385017</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26351000" />
+    <option name="totallyTimeSpent" value="27966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -301,7 +307,8 @@
     <MESSAGE value="Finished" />
     <MESSAGE value="Finished Avatar" />
     <MESSAGE value="insert practice finished with your notes" />
-    <option name="LAST_COMMIT_MESSAGE" value="insert practice finished with your notes" />
+    <MESSAGE value="spamtong clicker nearly done" />
+    <option name="LAST_COMMIT_MESSAGE" value="spamtong clicker nearly done" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/insertPractice.html">
@@ -320,8 +327,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clickerGaem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+        <state relative-caret-position="552">
+          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
         </state>
       </provider>
     </entry>

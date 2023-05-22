@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-<div class="container">
+<div class="container" id="container">
     <div class="content">
         <h2 id="lose">User goes here</h2>
         <div class="scoreplace">
@@ -55,9 +55,13 @@
                     <label for="100">Instead of feeding 1 kromer you feed 100 more at a time than usual (stackable)!!!! (Need 7,500 kromer)</label>
                     <button id="100">Buy!</button>
                 </div>
+                <div class="row">
+                    <label for="1000">Instead of feeding 1 kromer you feed 1000 more at a time than usual (stackable)!!!! (Need 50,000 kromer)</label>
+                    <button id="1000">Buy!</button>
+                </div>
                 <br>
                 <div class="row">
-                    <label for="win">Become a [BIG SHOT]!(You win the game)(1,000,000,000,000 kromer Needed)</label>
+                    <label for="win">Become a [BIG SHOT]!(You win the game)(Need 1,000,000 kromer and feed one more time after)</label>
                     <button id="win">Buy!</button>
                 </div>
             </fieldset>
@@ -70,6 +74,7 @@
     const user = document.querySelector('user');
     const username = document.getElementById('username');
     const submit = document.getElementById('submit');
+    const container = document.getElementById('container');
 
     submit.addEventListener('click', function(e){
         let displayuser = username.value;
@@ -97,21 +102,30 @@
 
 
         if(score >= 100000){
-            picture.src = "https://media.tenor.com/YafHrFtwrH0AAAAC/spamton-spamton-neo.gif";
+            picture.src = "https://media.tenor.com/vaIVcvpesTkAAAAC/spamton-big-shot.gif";
         }
         else if(score >= 50000){
-            picture.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrfpsV1i2t1gwb0G9LLVux7ajlFQvpn-KxNg&usqp=CAU";
+            picture.src = "https://media.tenor.com/PgMHe5_oG4cAAAAC/spamton-deltarune.gif";
+        }
+        else if(score >= 25000){
+            picture.src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d60b414b-c4a1-4ae0-9eeb-e80bba94ba34/deryuma-b3c491d5-b30b-4a5b-ba6e-794559cb6acb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q2MGI0MTRiLWM0YTEtNGFlMC05ZWViLWU4MGJiYTk0YmEzNFwvZGVyeXVtYS1iM2M0OTFkNS1iMzBiLTRhNWItYmE2ZS03OTQ1NTljYjZhY2IucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lzMHMeRhDwJWOG-uwFqH3R0wCOyQg9fulb5GNmUMpO0";
         }
         else if(score >= 10000){
-            picture.src = "https://media.spelunky.fyi/mods/logo/01FHNK8SKE6TXC7KHCFQNMV02P/1633886168688976.gif";
+            picture.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUNDGFgdVOHW0u31jzGAHOP4ZwykxiQUodw&usqp=CAU";
         }
         else if(score >= 5000){
-            picture.src = "https://ae01.alicdn.com/kf/Secb380b77e634844b5069cb35339fd2fK/Deltarune-Spamton-Customizable-Soft-Button-Pin-Fashion-Hat-Collar-Cartoon-Cute-Funny-Women-Jewelry-Lapel-Pin.jpg";
+            picture.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrfpsV1i2t1gwb0G9LLVux7ajlFQvpn-KxNg&usqp=CAU";
+        }
+        else if(score >= 2500){
+            picture.src = "https://media.spelunky.fyi/mods/logo/01FHNK8SKE6TXC7KHCFQNMV02P/1633886168688976.gif";
         }
         else if(score >= 1000){
-            picture.src = "https://static.wikia.nocookie.net/73581563-70ef-4a5d-8a48-73ed43c08573/scale-to-width/755";
+            picture.src = "https://ae01.alicdn.com/kf/Secb380b77e634844b5069cb35339fd2fK/Deltarune-Spamton-Customizable-Soft-Button-Pin-Fashion-Hat-Collar-Cartoon-Cute-Funny-Women-Jewelry-Lapel-Pin.jpg";
         }
         else if(score >= 500){
+            picture.src = "https://static.wikia.nocookie.net/73581563-70ef-4a5d-8a48-73ed43c08573/scale-to-width/755";
+        }
+        else if(score >= 250){
             picture.src = "https://us-tuna-sounds-images.voicemod.net/37f0b822-2671-4e48-ad31-2c1708b5cc7d-1662681686028.png";
         }
         else if(score >= 100){
@@ -123,7 +137,7 @@
         else if(score >= 69){
             picture.src = "hue.PNG";
         }
-        else if (score >= 60){
+        else if (score >= 50){
             picture.src = "https://i.redd.it/uurk6fssidba1.png";
         }
     });
@@ -211,6 +225,36 @@
             });
         }
     });
+
+    const times1000 = document.getElementById('1000');
+
+    let h = 1000;
+
+    times1000.addEventListener('click', function(e){
+        if(score >= 10000){
+            score -= 10000;
+            click.addEventListener('click', function(e){
+                score += h;
+                scorePlace.innerHTML = `<h3 id="score">kromer fed to spamtong: ${score}</h3>`;
+            });
+        }
+    });
+
+    const victory = document.getElementById('win');
+
+    victory.addEventListener('click', function(e){
+        if (score >= 1000000){
+            score -= 1000000;
+            click.addEventListener('click', function (e) {
+                container.innerHTML = '';
+                const end = document.createElement('img');
+                end.src = "https://i.redd.it/q7ezksuzg0z81.gif";
+                end.height = '900';
+                end.width = '1500';
+                container.insertAdjacentElement('afterbegin', end);
+            })
+        }
+    })
 
 
 </script>
